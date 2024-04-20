@@ -7,3 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .custom-input:hover::placeholder {
+    color: rgba(255, 255, 255, 0.8); /* Ajuste conforme necessário */
+  }

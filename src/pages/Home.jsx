@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import TheTopMovies from "./TheTopMovies";
 
-
 const Home = () => {
-  
   return (
-    <>
-      <Navbar />
-      <TheTopMovies />
-    </>
+    <div className="w-full h-full">
+      <div className="w-full h-full linear-gradient(to top, bg-background-image) bg-background-image bg-cover bg-center">
+        <Navbar />
+        <TheTopMovies />
+      </div>
+    </div>
   );
 };
 
