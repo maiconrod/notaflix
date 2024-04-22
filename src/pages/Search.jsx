@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import MovieCard from "../components/MovieCard";
+import Footer from "../components/Footer";
 
 const searchUrl = import.meta.env.VITE_SEARCH;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -34,7 +35,7 @@ const Search = () => {
         style={{ backdropFilter: "blur(3px) opacity(90%)" }}
         className="text-white border border-gray-500 rounded-2xl m-5 sm:m-10 p-10"
       >
-        <h2 className="font-semibold text-center sm:text-left">
+        <h2 className="font-semibold text-center sm:text-left pb-4">
           Resultados para: {query}
         </h2>
         <div className="grid grid-cols-1 sm:gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center md-custom">
@@ -45,6 +46,7 @@ const Search = () => {
             ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
