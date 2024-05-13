@@ -26,7 +26,7 @@ const TheTopMovies = () => {
     <div
       a
       style={{ backdropFilter: "blur(3px) opacity(100%)" }}
-      className="text-white border border-gray-500 rounded-2xl m-5 sm:m-11 p-2 sm:p-10"
+      className="text-white border border-gray-500 rounded-2xl m-2 sm:m-7 p-2 sm:p-3"
     >
       <h2 className="font-semibold text-center md:text-left pb-4">
         Melhores Filmes:

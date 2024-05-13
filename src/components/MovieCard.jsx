@@ -10,7 +10,7 @@ const MovieCard = ({ movie, showLink = true }) => {
   return (
     <div
     style={{ backdropFilter: "blur(3px) opacity(100%)" }}
-    className="p-2 pb-4 mx-3 grid justify-items-center items-center rounded-lg bg-gradient-to-t border border-gray-500 mb-3 min-w-72 max-w-72 sm:max-w-80">
+    className="grid justify-items-center items-center rounded-lg bg-gradient-to-t border border-gray-500 mx-2 p-3">
         <img
           src={imageUrl + movie.poster_path}
           alt={movie.title}
